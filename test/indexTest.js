@@ -1,5 +1,22 @@
 require ( './root.js' );
 
+function shout(string){
+ return string.toUpperCase();
+}
+function whisper(string){
+  return string.toLowerCase();
+}
+
+function sayHiToHeadphonedRoommate(string){
+  if(string === string.toUpperCase){
+    console.log("YES INDEED!") ;
+  }
+  else if (string === string.toLowerCase){
+    console.log("I can't hear you!");
+  }
+  else if(string === "Let's have dinner together!")
+  console.log("I would love to!");
+}
 
 describe('shout(string)', function() {
   it('receives one argument and returns it in all caps', function() {
